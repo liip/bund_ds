@@ -403,7 +403,7 @@ import ContactSection from '~/components/ch/sections/ContactSection'
 import Accordion from '~/components/ch/components/Accordion'
 import TextImage from '~/components/ch/components/TextImage'
 import SlideshowExample from '~/components/ch/demo/SlideshowExample.vue'
-import Tabs from '~/components/ch/demo/Tabs.vue'
+import Tabs from '~/components/ch/demo/TabsLarge.vue'
 import ShareBar from '../components/ch/demo/ShareBar.vue'
 
 export default {
