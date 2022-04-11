@@ -218,9 +218,15 @@
               veröffentlicht oder verlinkt. Die INTERLIS-Modelldatei wird in
               jedem Fall in die Datenmodellablage eingepflegt.
             </p>
-            <div class="bg-gray-50">
-              <Tabs></Tabs>
-            </div>
+          </div>
+        </div>
+        <div class="container container--grid gap--responsive bg-gray-50">
+          <div class="container__center--xs vertical-spacing">
+            <Tabs></Tabs>
+          </div>
+        </div>
+        <div class="container container--grid gap--responsive">
+          <div class="container__center--xs vertical-spacing">
             <ul>
               <li>
                 Ein neues minimales Geodatenmodell in der Datenmodellablage

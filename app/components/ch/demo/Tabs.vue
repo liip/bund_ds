@@ -40,8 +40,8 @@
       class="tab__container"
     >
       <div>
-        <ul>
-          <li class="list--bare">
+        <ul class="download-list">
+          <li class="download-list-item">
             <a href="#" download="" class="download-item">
               <svg
                 viewBox="0 0 24 24"
@@ -67,7 +67,7 @@
               </div></a
             >
           </li>
-          <li class="list--bare">
+          <li class="download-list-item">
             <a href="#" download="" class="download-item">
               <svg
                 viewBox="0 0 24 24"

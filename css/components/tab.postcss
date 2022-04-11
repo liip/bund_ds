@@ -5,18 +5,13 @@
 .tabs {
   .container__center--xs & {
     @apply bg-gray-50 py-8;
-    @apply broader-than-container;
-
-    padding-left:  calc((100vw - 6em ) / 12 );
-    padding-right: calc((100vw - 6em ) / 12 );
   }
 
   .tab__control {
-     &:hover:not(.tab__control--active) {
+    &:hover:not(.tab__control--active) {
       @apply bg-gray-100;
     }
   }
-
 }
 
 .tab__controls {
@@ -31,17 +26,16 @@
     @apply relative;
     @apply border-t-4 border-red-600;
     &:after {
-      content:"";
+      content: "";
       height: 1px;
       bottom: -1px;
-      left:0px;
+      left: 0px;
       @apply absolute w-full bg-white;
     }
   }
   &:hover:not(.tab__control--active) {
     @apply bg-gray-50;
   }
-
 }
 
 .tab__container {
@@ -49,6 +43,6 @@
   @apply md:px-6 px-4 pb-6;
 
   &.tab__container--is-hidden {
-    @apply hidden
+    @apply hidden;
   }
 }
