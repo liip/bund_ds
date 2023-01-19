@@ -135,6 +135,7 @@
               icon="ArrowLeft"
               iconPos="left"
               label="Zurück zu Übersicht"
+              class="btn--back"
             />
           </div>
         </div>

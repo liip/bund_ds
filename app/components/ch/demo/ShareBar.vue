@@ -18,7 +18,7 @@
         icon="ArrowLeft"
         iconPos="left"
         label="Zurück zu Übersicht"
-        class="mr-auto"
+        class="btn--back"
       />
     </div>
   </div>
