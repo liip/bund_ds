@@ -1,0 +1,42 @@
+
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import store from '@/.storybook/store';
+import detailPageSimple from '../../../pages/detailPageSimple.vue';
+
+<Meta
+  title="Pages/Freebrand/Detail Page Simple"
+  component={detailPageSimple}
+  argTypes={{
+    isOpen: { name:'Is open', control: { type: 'boolean' } },
+  }}
+/>
+
+export const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { detailPageSimple },
+  store: store,
+  template: '<detailPageSimple :isFreebrand="true" />',
+});
+
+# Freebrand Simple page example
+
+<a href="?path=/story/pages-freebrand-detail-page-simple--example">Go to the Canvas Tab</a>
+
+---
+
+<a href="?id=pages-freebrand-detail-page-simple--example" target="_blank">Open page in full width in a new tab</a>
+
+Add a `body--freebrand` class to the body tag to display the freebrand version of the page.
+
+<Canvas>
+  <Story
+    name="Example"
+    args={{
+      isOpen: false,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+

@@ -10,6 +10,10 @@ export default {
     isIntranet: {
 			type: Boolean,
 			default: false,
+		},
+    isFreebrand: {
+			type: Boolean,
+			default: false,
 		}
 	},
   methods: {
@@ -37,6 +41,12 @@ export default {
         document.body.classList.add('body--intranet')
       } else {
         document.body.classList.remove('body--intranet')
+      }
+
+      if (this.isFreebrand) {
+        document.body.classList.add('body--freebrand')
+      } else {
+        document.body.classList.remove('body--freebrand')
       }
     },
   },
