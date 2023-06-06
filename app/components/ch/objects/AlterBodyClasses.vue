@@ -44,9 +44,9 @@ export default {
       }
 
       if (this.isFreebrand) {
-        document.body.classList.add('body--freebrand')
+        document.body.classList.add('body--freebrand-green')
       } else {
-        document.body.classList.remove('body--freebrand')
+        document.body.classList.remove('body--freebrand-green')
       }
     },
   },
