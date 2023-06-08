@@ -31,14 +31,14 @@ export default {
 
       if (context === 'mobile' && this.isMobileMenuOpen) {
         if(this.isFreebrand){
-          document.body.classList.add('body--freebrand-mobile-menu-is-open')
+          document.body.classList.add('body--mobile-menu-is-open-top-bar-disabled')
         } else {
           document.body.classList.add('body--mobile-menu-is-open')
         }
         this.$store.dispatch('layout/openMobileMenu')
       } else {
         if(this.isFreebrand){
-          document.body.classList.add('body--freebrand-mobile-menu-is-open')
+          document.body.classList.add('body--mobile-menu-is-open-top-bar-disabled')
          } else {
           document.body.classList.remove('body--mobile-menu-is-open')
         }
@@ -52,9 +52,9 @@ export default {
       }
 
       if (this.isFreebrand) {
-        document.body.classList.add('body--freebrand-green')
+        document.body.classList.add('body--freebrand')
       } else {
-        document.body.classList.remove('body--freebrand-green')
+        document.body.classList.remove('body--freebrand')
       }
     },
   },
