@@ -38,7 +38,7 @@ export default {
         this.$store.dispatch('layout/openMobileMenu')
       } else {
         if(this.isFreebrand){
-          document.body.classList.add('body--mobile-menu-is-open-top-bar-disabled')
+          document.body.classList.remove('body--mobile-menu-is-open-top-bar-disabled')
          } else {
           document.body.classList.remove('body--mobile-menu-is-open')
         }

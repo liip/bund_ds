@@ -12,8 +12,14 @@
 }
 
 .mobile-menu--is-open,
-.freebrand-mobile-menu--is-open,
-.body--mobile-menu-is-open,
+.body--mobile-menu-is-open .mobile-menu {
+  @apply block lg:hidden;
+  height: calc(100vh - 85px);
+  @apply visible opacity-100;
+  @apply overflow-y-auto;
+}
+
+.mobile-menu--is-open,
 .body--mobile-menu-is-open-top-bar-disabled .mobile-menu {
   @apply block lg:hidden;
   height: calc(100vh - 85px);

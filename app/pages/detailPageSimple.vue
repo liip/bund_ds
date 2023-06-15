@@ -3,8 +3,8 @@
     <AlterBodyClasses :isMobileMenuOpen="getMobileMenuIsOpen()" :isIntranet="isIntranet" :isFreebrand="isFreebrand"/>
     <header id="main-header">
       <a href="#main-content" class="skip-to-content">Skip to main content</a>
-      <TopBar :isOpen="false" />
-      <TopHeader />
+      <TopBar v-if="!isFreebrand" :isOpen="false" />
+      <TopHeader :isFreebrand="isFreebrand" />
       <DesktopMenu />
       <MobileMenu />
       <Breadcrumb />
