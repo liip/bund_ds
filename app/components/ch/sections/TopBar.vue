@@ -223,7 +223,7 @@
               <div class="search search--negative search--large">
                 <div class="search__group">
                   <input
-                    type="text"
+                    type="search"
                     id="search-input"
                     label="Ämter filtern"
                     placeholder="Filtern"
