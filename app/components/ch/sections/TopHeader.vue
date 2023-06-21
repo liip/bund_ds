@@ -13,6 +13,7 @@
         title="Eidgenössisches Departement für Verteidigung, <br/>Bevölkerungsschutz und Sport"
         accronym="DSS"
         :class="overrideLogoForPrint ? 'logo--print-hidden' : ''"
+        :isFreebrand="isFreebrand"
       />
       <Logo
         v-if="overrideLogoForPrint"
