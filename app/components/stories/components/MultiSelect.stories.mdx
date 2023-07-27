@@ -6,6 +6,7 @@ import Notification from '../../ch/components/Notification.vue'
   title="Components/Form/MultiSelect"
   component={MultiSelect}
   argTypes={{
+    bare: { control: { type: 'boolean' } },
     variant: {
       control: {
         type: 'select',
@@ -19,6 +20,7 @@ import Notification from '../../ch/components/Notification.vue'
     hideLabel: { control: { type: 'boolean' } },
     multiple: { control: { type: 'boolean' } },
     placeholder: {},
+    name: {},
     message: {},
     messageType: {
       control: {
@@ -41,13 +43,16 @@ export const Template = (args, { argTypes }) => ({
         :label="label"
         :disabled="disabled"
         :hideLabel="hideLabel"
-        :id="id"
         :multiple="multiple"
         :name="name"
         :message="message"
         :messageType="messageType"
         :required="required"
+        :selected="selected"
         :placeholder="placeholder"
+        :excluded="excluded"
+        :selectLimit="selectLimit"
+        :bare="bare"
       />
     </div>
   `,
@@ -82,12 +87,15 @@ export const Template = (args, { argTypes }) => ({
       disabled: false,
       hideLabel: false,
       name: 'select-name',
-      id: 'select-id',
       multiple: true,
+      bare: false,
       placeholder: 'Placeholder',
-      variant: 'outline',
+      excluded: ['foo'],
+      selectLimit: 3,
+      selected: ['bar', 'Relatively long option'],
+      required: true
     }}
-  >
+>
     {Template.bind({})}
   </Story>
 </Canvas>
