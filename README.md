@@ -1,10 +1,10 @@
 # Design System for the Swiss Confederation
 
-<div style="background-color:rgba(0, 0, 200, 0.04); padding:40px; border-radius: 20px;">
-  This repository is not maintained anymore. 
-  The new repository (https://github.com/swiss/designsystem) is now private.
-  Please contact <a href="mailto:Davy.Augier@bk.admin.ch">Davy.Augier@bk.admin.ch</a> to request an access.
-</div>
+:warning: **This repository is not maintained anymore.** 
+
+The new repository (https://github.com/swiss/designsystem) is now private.
+
+Please contact <a href="mailto:Davy.Augier@bk.admin.ch">Davy.Augier@bk.admin.ch</a> to request an access.
 
 ## Purpose
 
